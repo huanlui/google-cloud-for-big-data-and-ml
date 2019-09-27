@@ -28,4 +28,7 @@ Sobre networking, lo más inteteresante es la interconexión. Si quiero pasar da
 
 DiagloFlow: es un servicio de atención al cliente. Mantiene una conversación aparentemente natural con preguntas que acaba generando una salida. Por ejemplo, te pregunta que quieres comer, si quieres ir en coche, etc. y al final te genera la reserva automáticamente . 
 
+Codelabs: para hacer ejerciios y aprender. Vamos a hacer en clase los siguientes:
+- Creating a Virtual Machine. 
+- Upload Objects to Cloud Storage. 
 
