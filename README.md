@@ -52,6 +52,15 @@ Puede almacenar cuando haya una caida (último estado). Tambien permite prevenir
 Para ello, antes tenemos que conoce3r sobre distintos conectos. 
 
 Dentro de un cluster Haddop/Spark, nos vamos a encontrar tres tecnologias clave:
-* HDFS: Sistema de alamcenamiento de ficheros distribuido. Tengo una serie de discos en mi cluster. Cada fichero está distribuido en los distintos nodos (replicado). Cuando haga algún tipo de procedo que requiere leer el fichero grande, usaré varios workers que vayan leyendo en paralelo el documento de los distitnos discos en los que está replicado. Por ejemplo, si lo tengo en tres sitios, le digo que lea un tercio con cada uno. 
+* **HDFS**: Sistema de alamcenamiento de ficheros distribuido. Tengo una serie de discos en mi cluster. Cada fichero está distribuido en los distintos nodos (replicado). Cuando haga algún tipo de procedo que requiere leer el fichero grande, usaré varios workers que vayan leyendo en paralelo el documento de los distitnos discos en los que está replicado. Por ejemplo, si lo tengo en tres sitios, le digo que lea un tercio con cada uno. Además, si perdiera un disco, sigo pudiendo hacer cosas. Asi es como almacena los datos el sistema BigQuery de Google. 
+
+* **Hadoop**: La primera era de Big Data. Permite hacer el algoritmo de map/reduce. Es computacion paralela, Divide entre varios nodos, N, el trabajo el trabajo y tarda N veces menos aproximadamente. Hay un nodo master que distribuye el juego y N esclavos que hacen el trabajo. Si uno de esos N tiene problemas (disco, memoria, etc.). El master se da cuenta y genera otro exactamente igual que haga su trabajo. Eso es el patron YARN (Yet Another Resource Negotiator). Es en java. Para hacer algo nuevo mejor no usarlo. 
+
+* **Spark**: Es la siguiente generacion del big data. Con hadoop nos encontramos la limitacion de lectura y escritura de los discos. Spark te permite el mismo patrón YARN pero en memoria. Es lo mismo, pero el otro va en disco y este en memoria. 
+
+Hay cosas por encima: SparkSQL para abstraerte de lo de avbajo y hacer las cosas con SQL. PySpark lo mismo pero con python. 
+Pig y Hive son abstracciones que van por encima de Hadoop y Spark tambien 
+
+Dataproc nos permite usar tood esto sin tener que configurar nada, ya lo tiene todo instalado. Solo tengo que decir: quiero un cluster de 40 nodos y ya lo tengo sin configuración. 
 
 
