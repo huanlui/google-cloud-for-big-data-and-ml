@@ -68,3 +68,6 @@ Dataproc nos permite usar tood esto sin tener que configurar nada, ya lo tiene t
 DAtaflow serie interesatne tb para tmeas de procesar datos (scraping, etc(.
  CloudML Engine = Como data flow pero apra entrenar model
 
+Ejemplos del mismo equipo de Google en Github
+
+https://github.com/GoogleCloudPlatform/professional-services
