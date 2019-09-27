@@ -19,5 +19,13 @@ Eficiencia en cuanto a operaciones. Neceistan mucha menos gente para operar esto
 
 Eficiencia energética y renovables: los data centers de Google son capaces de operar hasta casi 30 grados sin problemas a diferencia de los otros que son a 20. En Finlandia lo refrigeran con agua de mar directamente. 
 
+Contenedor => Mayor granularidad que las MV. => Mayor estabilidad. 
+
+
+Spanner: base de datos relacional pero que tiene la ventaja de las relacionadles: tiene escalabilidad horizontal (que en principio no era posible con relacionales por la necesidad de mantener integridad referencial de los datos). Esta seran el futuro. PAra los nuevos casos él la montaría así directamente. PEro el coste de mover algo existene ahí es mayor. 
+
+Sobre networking, lo más inteteresante es la interconexión. Si quiero pasar datos desde mi máquina a google, puedo usar una VPN para conectarme directamente de forma encriptada. Los datos irán más seguros. 
+
+DiagloFlow: es un servicio de atención al cliente. Mantiene una conversación aparentemente natural con preguntas que acaba generando una salida. Por ejemplo, te pregunta que quieres comer, si quieres ir en coche, etc. y al final te genera la reserva automáticamente . 
 
 
