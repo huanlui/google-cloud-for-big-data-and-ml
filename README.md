@@ -32,3 +32,17 @@ Codelabs: para hacer ejerciios y aprender. Vamos a hacer en clase los siguientes
 - Creating a Virtual Machine. 
 - Upload Objects to Cloud Storage. 
 
+# Big Data
+
+En un minuto en google tienen 3M de busquedas , 100 horas de video y 1000 androids nuevos cada minuto... Volúmenes de datos terribles. 
+
+
+# Pub/Sub
+
+Equivalente a Apache Kafka. Para colas de mensajes. Permite pasar mensajes entre los distintos servicios de Google o propios. El reatin dura 7 dias maximo. Kafka lo puede hacer de forma indefinida. Kafka lo hace en menos de 5ms. PubSub tiene una latencia de en torno a un segundo. Uso frecuente: Google para las notificaciones de gmail. Para Big Data: informacion en tiempo real desde distintos sectores, por ejemplo de los aerogeneradores. Cualquier cosa que genere datos en tiempo real. 
+
+Dos tipos de subscripciones:
+* Push llega sin una subscripcion previa. 
+* Pull llega si nos hemos subscrito. 
+
+Puede almacenar cuando haya una caida (último estado). Tambien permite prevenir sobrecarga de mensajes. Hay clientes que tienen teras por segundo y no hay problemas!
