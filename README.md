@@ -61,6 +61,10 @@ Dentro de un cluster Haddop/Spark, nos vamos a encontrar tres tecnologias clave:
 Hay cosas por encima: SparkSQL para abstraerte de lo de avbajo y hacer las cosas con SQL. PySpark lo mismo pero con python. 
 Pig y Hive son abstracciones que van por encima de Hadoop y Spark tambien 
 
-Dataproc nos permite usar tood esto sin tener que configurar nada, ya lo tiene todo instalado. Solo tengo que decir: quiero un cluster de 40 nodos y ya lo tengo sin configuración. 
+Dataproc nos permite usar tood esto sin tener que configurar nada, ya lo tiene todo instalado. Solo tengo que decir: quiero un cluster de 5 nodos y ya lo tengo sin configuración. 
 
+* **Dataflow** : considera que es la tercer generacion. MEjor que  haddop y spark. 
+
+DAtaflow serie interesatne tb para tmeas de procesar datos (scraping, etc(.
+ CloudML Engine = Como data flow pero apra entrenar model
 
