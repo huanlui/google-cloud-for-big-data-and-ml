@@ -46,3 +46,12 @@ Dos tipos de subscripciones:
 * Pull llega si nos hemos subscrito. 
 
 Puede almacenar cuando haya una caida (último estado). Tambien permite prevenir sobrecarga de mensajes. Hay clientes que tienen teras por segundo y no hay problemas!
+
+# DataProc
+
+Para ello, antes tenemos que conoce3r sobre distintos conectos. 
+
+Dentro de un cluster Haddop/Spark, nos vamos a encontrar tres tecnologias clave:
+* HDFS: Sistema de alamcenamiento de ficheros distribuido. Tengo una serie de discos en mi cluster. Cada fichero está distribuido en los distintos nodos (replicado). Cuando haga algún tipo de procedo que requiere leer el fichero grande, usaré varios workers que vayan leyendo en paralelo el documento de los distitnos discos en los que está replicado. Por ejemplo, si lo tengo en tres sitios, le digo que lea un tercio con cada uno. 
+
+
