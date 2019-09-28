@@ -102,9 +102,23 @@ Con BigQuery, por cada tera de información , cobran 5 dólares .
 
 ## Datalab
 
+Ya no tirar por datalab, que yq ni existe en la consola, sino tirar por la segunda opcion de las siguiente. 
+
 Es para noetbooks de Jupyter. Aparte de éste, está :
 
-* colab: ya lo vimos en su momento. Pero tiene limitaciones para uso empresarial. 
-* En la consola, ir a AI Platform>Notebooks: ahí ya tiene instancias con todo instalado. Ademas, puedo definir una máquina compaertida con mi equipo en la nube. Tambien puedo usar una imagen mas barata para mis pruebas y despuues coger una mas potente para el entrenamiento. Una potente puede tener 1 terabytes de ram y 50 procesadores, por ejemplo. 
+* colab: ya lo vimos en su momento. Pero tiene limitaciones para uso empresarial. Ademas , puede que quieras hacer algo y no tengas recursos suficientes. De madrugada habrá más recursos. Pero no puedes personalizarlo. Además no es integrable con un git. Para probar nuestros modelos, sin problema. Cuando ya sea productivo, mejor cambiar a lo otro, que sabemos que va a estar disponible. 
+* En la consola, ir a AI Platform>Notebooks: ahí ya tiene instancias con todo instalado. Ademas, puedo definir una máquina compaertida con mi equipo en la nube. Tambien puedo usar una imagen mas barata para mis pruebas y despuues coger una mas potente para el entrenamiento. Una potente puede tener 1 terabytes de ram y 50 procesadores, por ejemplo. Con eso si puedes gestionar esos notebooks en un git.  Puedo también añadir datos adicionales. Y puedo después guardar los datos en BigQuery. Puedo tambien usar CloudML para entrenar modelo y servirlo a traves de api. 
 
+Interesante si vas a interactuar con Google. Tienes todo en el mismo sitio, te ahorras tiempos de bajada o subida de datos. 
 
+REcomendacion: todo lo que sea cojsultas, mejor pedirsleo a bigquery en lugar de hacer consltas en pandas. Sera mas rapido y barato. 
+
+## Cloud Composer
+
+Orquestador que me permite orquestar una ETL. Para hacer un workflow de datos. 
+
+Pensado para procesos batch más que para streaming. 
+
+Sencillo de codificar porque es con Python. 
+
+Caso para un data scientis que esta explorando datos. Sube el csv u otor ficheor conocido a Big Query. Desde ahi, coge los notebooks de gmail para explorar, etc. (precio de guardar datos: 0.23 euros por giga y mes). Despues ya con el composer lo pondria en produccion. 
