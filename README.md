@@ -113,7 +113,7 @@ Interesante si vas a interactuar con Google. Tienes todo en el mismo sitio, te a
 
 REcomendacion: todo lo que sea cojsultas, mejor pedirsleo a bigquery en lugar de hacer consltas en pandas. Sera mas rapido y barato. 
 
-## Cloud Composer
+## Cloud Composer/ Airflow
 
 Orquestador que me permite orquestar una ETL. Para hacer un workflow de datos. 
 
@@ -122,3 +122,5 @@ Pensado para procesos batch más que para streaming.
 Sencillo de codificar porque es con Python. 
 
 Caso para un data scientis que esta explorando datos. Sube el csv u otor ficheor conocido a Big Query. Desde ahi, coge los notebooks de gmail para explorar, etc. (precio de guardar datos: 0.23 euros por giga y mes). Despues ya con el composer lo pondria en produccion. 
+
+Tiene una componente visual muy buena parahacer insights dentro del propceso.
