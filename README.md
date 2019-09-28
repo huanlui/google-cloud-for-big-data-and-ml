@@ -99,3 +99,12 @@ Una de las razones por las que funciona bien es porque su almacenamiento está o
 Los datos también están particionados por día, aunque también se puede particionar por por ejemplo país. Todo esto es rendimiento aún más rápido. 
 
 Con BigQuery, por cada tera de información , cobran 5 dólares .
+
+## Datalab
+
+Es para noetbooks de Jupyter. Aparte de éste, está :
+
+* colab: ya lo vimos en su momento. Pero tiene limitaciones para uso empresarial. 
+* En la consola, ir a AI Platform>Notebooks: ahí ya tiene instancias con todo instalado. Ademas, puedo definir una máquina compaertida con mi equipo en la nube. Tambien puedo usar una imagen mas barata para mis pruebas y despuues coger una mas potente para el entrenamiento. Una potente puede tener 1 terabytes de ram y 50 procesadores, por ejemplo. 
+
+
