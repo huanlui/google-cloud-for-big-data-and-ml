@@ -71,3 +71,5 @@ DAtaflow serie interesatne tb para tmeas de procesar datos (scraping, etc(.
 Ejemplos del mismo equipo de Google en Github
 
 https://github.com/GoogleCloudPlatform/professional-services
+
+**Apache Beam**: aprender de esto, que sabe poca gente y es la siguiente oleada. 
