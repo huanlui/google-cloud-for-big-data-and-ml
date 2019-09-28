@@ -138,3 +138,7 @@ Si montas una instancia enterpreise son 1000 euros al mes. PAra aprender, tenemo
 Composer puede orquetar todos los servicios de google y de terceros, includios data fusion. Fusion integra datos, pero no puede orquestar como lo hace composer. 
 
 El publico objetivo de Composer es un data engineer que sepa de python, el de Fusion, una data analiys que quieres hacer cosas rapidas sin necesidad de programar. Mas barato el composer. 
+
+## Data Catalog
+
+Para llevar un orden de lo que tienes guardado BigQuery, Pub/Sub y Cloud Storage. PErmite buscar en ellos, porque a medida que tus data lakes van creciendo puede ser un descontrol.
