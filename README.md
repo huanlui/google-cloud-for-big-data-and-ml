@@ -126,3 +126,15 @@ Sencillo de codificar porque es con Python.
 Caso para un data scientis que esta explorando datos. Sube el csv u otor ficheor conocido a Big Query. Desde ahi, coge los notebooks de gmail para explorar, etc. (precio de guardar datos: 0.23 euros por giga y mes). Despues ya con el composer lo pondria en produccion. 
 
 Tiene una componente visual muy buena parahacer insights dentro del propceso.
+
+## Data Fusion
+
+Está en beta de momento. 
+
+También es para crear pipelines con datos. 
+
+Si montas una instancia enterpreise son 1000 euros al mes. PAra aprender, tenemos una instancia de desarrollo con menor infraestructura por 100 euros al mes. 
+
+Composer puede orquetar todos los servicios de google y de terceros, includios data fusion. Fusion integra datos, pero no puede orquestar como lo hace composer. 
+
+El publico objetivo de Composer es un data engineer que sepa de python, el de Fusion, una data analiys que quieres hacer cosas rapidas sin necesidad de programar. Mas barato el composer. 
