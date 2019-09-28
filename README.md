@@ -115,6 +115,8 @@ REcomendacion: todo lo que sea cojsultas, mejor pedirsleo a bigquery en lugar de
 
 ## Cloud Composer/ Airflow
 
+Ojo, el coste mínimo de entrada son de 300 euros al mes. 
+
 Orquestador que me permite orquestar una ETL. Para hacer un workflow de datos. 
 
 Pensado para procesos batch más que para streaming. 
