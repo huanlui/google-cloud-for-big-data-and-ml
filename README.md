@@ -73,3 +73,29 @@ Ejemplos del mismo equipo de Google en Github
 https://github.com/GoogleCloudPlatform/professional-services
 
 **Apache Beam**: aprender de esto, que sabe poca gente y es la siguiente oleada. 
+
+## Big Query
+
+Es como si tuviera un cluster de spark con 1000 nodos => mucho más rápido. Además no me tengo que precoupar de gestionarlos. Una query de Teras de datos tardará del orden de segundos. Si es petabytes, será del orden de minutos. 
+
+Sql Server tardaba 40 minutos y en Big Query son 2 minutos. Procesos de ETL de Bussiness Intelligence de 10 horas, con volumen de datos de 10 teras, se resuelven en 10 minutos. 
+
+Además es más barato. Todo lo que podamos llevar a consultas SQL Estandar, el consejo es llevarlo a Big Query. Lo que tenga otras cosas, como llamadas a librerias, etc, montarlo sobre dataflow. 
+
+Es computacion distribuitda tambien y riene un motor de consultas. 
+
+Esto tiene determinadas herramientas en Big Query que no tiene el SQL Estandar. Por ejemplo, trasposicion de datos. 
+
+Aquí la infraestructura es compartida. No es omo dataproc en el que tú te resevas tu máquina. Aquí los resucursos de capturan de forma 
+
+Pero BigQuery no vale para hacer consultas para una web apra algo super rápido . PAra eso usar por ejempli Big Table. BigQuery tarda al menos un segundo.
+
+En BigQuery tenemos un proyecto, despues un dataset y luego las tablas. Un dataset es una agrupación de tablas. Por ejemplo puedo tener un DataSet de RRHH y otro de financiero. Pues bien, BigQuery permite extraer datos de ambos dataset para las queries.
+
+Además, permite otros datos de entrada, como de redes sociales, de SAP, de escripts de r, y multidud de formatos de salida, desde excel hasta un cutre-tableau. Y los datos de entrada pueden llegar también en streaming o en batch. 
+
+Una de las razones por las que funciona bien es porque su almacenamiento está orientado a columnas en lugar de orientado a filas. Por ejemplo, si quiero saber todos las personas que se llamen Ismael, tiene que ir fila a fila. Sin embargo, con esto, habrá un _fichero_ para esa columna concreta, lo que acelera las búsquedas. 
+
+Los datos también están particionados por día, aunque también se puede particionar por por ejemplo país. Todo esto es rendimiento aún más rápido. 
+
+Con BigQuery, por cada tera de información , cobran 5 dólares .
